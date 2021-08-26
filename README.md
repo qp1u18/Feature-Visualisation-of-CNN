@@ -14,7 +14,7 @@ During implementation phase, the deepdream was recreated on a pretrained CNN in 
 
 <img src="./img/base_AM.JPG" alt = "base AM (channel 0)" align=center />
 
-Besides, the proposed evaluation method was implemented. Firstly, I selected a suitable dataset (**ImageNet-v2**) and then this dataset was used to generate 9 images that maximumly activate the target channel. This method is also called **top-9 dataset samples**, which is commonly used to qualitatively evaluate the AM images. Lastly, the top-9 sets and a perceptual metrics called **LPIPS** were used to calculate the “interpretability” of the AM images. 
+Besides, the proposed evaluation method was implemented. Firstly, I selected a suitable dataset (**ImageNet-v2**) and then this dataset was used to generate 9 images that maximumly activate the target channel. This method is also called **top-9 dataset samples**, which is commonly used to qualitatively evaluate the AM images (see file `top9-v-0-119` for the top-9 dataset samples of first 120 channels). Lastly, the top-9 sets and a perceptual metrics called **LPIPS** were used to calculate the “interpretability” of the AM images. 
 
 So How did I define the “interpretability” in this project? Concretely, I will take **channel 62** as an example, that means I’ve paired each of the images from top-9 with the generated AM image and the pass each pair to LPIPS model, and it will output the perceptual similarity between the two images. So eventually, I will get 9 similarities for each channel, and then the average of those 9 values is taken as the final result to indicate the "interpretability" in this project. The lower value mean the AM image looks closer to the real images. 
 
@@ -28,4 +28,14 @@ During the experiment phase, aforementioned 4 regularisations were incorporated 
 
 <img src="./img/res.JPG" alt = "similarity calculation" align=center />
 
+## **How to use**
+### Run on Google Colab
+- Download the `.ipynb` file
+- Choose GPU as your hardware accelerator
+- Follow the instructions in the script and run the code
 
+## Code References
+1. C. Olah, A. Mordvintsev and L. Schubert, “Feature Visualization,” Distill, 2017. 
+2. “Google Colaboratory: DeepDream,” 4 12 2020. [Online]. Available: https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/generative/deepdream.ipynb.
+3. F.-F. Li, J. Deng, O. Russakovsky, A. Berg and K. Li, “ImageNet,” Stanford University, [Online]. Available: http://www.image-net.org/download-images.
+4. R. Zhang, P. Isola, A. A. Efros, E. Shechtman and O. Wang, “The Unreasonable Effectiveness of Deep Features as a Perceptual Metric,” arXiv:1801.03924 [cs], 2018. Available: https://github.com/S-aiueo32/lpips-pytorch
