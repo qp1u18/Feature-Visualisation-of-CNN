@@ -35,7 +35,7 @@ During the experiment phase, aforementioned 4 regularisations were incorporated 
 - Follow the instructions in the script and run the code
 
 ## Code References
-1. C. Olah, A. Mordvintsev and L. Schubert, “Feature Visualization,” Distill, 2017. 
+1. C. Olah, A. Mordvintsev and L. Schubert, “Feature Visualization,” Distill, 2017. Available: https://github.com/tensorflow/lucid
 2. “Google Colaboratory: DeepDream,” 4 12 2020. [Online]. Available: https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/generative/deepdream.ipynb.
 3. F.-F. Li, J. Deng, O. Russakovsky, A. Berg and K. Li, “ImageNet,” Stanford University, [Online]. Available: http://www.image-net.org/download-images.
 4. R. Zhang, P. Isola, A. A. Efros, E. Shechtman and O. Wang, “The Unreasonable Effectiveness of Deep Features as a Perceptual Metric,” arXiv:1801.03924 [cs], 2018. Available: https://github.com/S-aiueo32/lpips-pytorch
