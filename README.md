@@ -34,7 +34,7 @@ During the experiment phase, aforementioned 4 regularisations were incorporated 
 - Choose GPU as your hardware accelerator
 - Follow the instructions in the script and run the code
 
-## Code References
+## Code Reference
 1. C. Olah, A. Mordvintsev and L. Schubert, “Feature Visualization,” Distill, 2017. Available: https://github.com/tensorflow/lucid
 2. “Google Colaboratory: DeepDream,” 4 12 2020. [Online]. Available: https://colab.research.google.com/github/tensorflow/docs/blob/master/site/en/tutorials/generative/deepdream.ipynb.
 3. F.-F. Li, J. Deng, O. Russakovsky, A. Berg and K. Li, “ImageNet,” Stanford University, [Online]. Available: http://www.image-net.org/download-images.
